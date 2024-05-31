@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    background-image: radial-gradient(white 0.5px, transparent 0.5px), radial-gradient(white 0.5px, transparent 0.5px);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+#tardis {
+    cursor: pointer;
+}
+h1, p {
+    color: white;
+    margin: 0;
+}
+h1 {
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #00bfff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+a:hover {
+    text-decoration: underline;
+}
+.curiosidades {
+    margin-top: 20px;
+    max-width: 600px;
+    color: white;
+}
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1201ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.back-button:hover {
+    background-color: #0603ac;
+}

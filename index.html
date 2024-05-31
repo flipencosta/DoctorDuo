@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Doctor Who</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Doctor Duo</h1>
+    <p>Juntos na jornada de descobrir o universo</p>
+    <!-- SVG da TARDIS -->
+    <div id="tardis">
+        <svg width="200" height="400" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Corpo da TARDIS -->
+            <rect width="200" height="400" fill="blue" />
+            
+            <!-- Divisória central da porta -->
+            <rect x="97" y="0" width="6" height="400" fill="#000080" />
+            
+            <!-- Janelas superiores -->
+            <rect x="30" y="30" width="60" height="60" fill="white" />
+            <rect x="110" y="30" width="60" height="60" fill="white" />
+            <line x1="30" y1="60" x2="90" y2="60" stroke="blue" stroke-width="5"/>
+            <line x1="60" y1="30" x2="60" y2="90" stroke="blue" stroke-width="5"/>
+            <line x1="110" y1="60" x2="170" y2="60" stroke="blue" stroke-width="5"/>
+            <line x1="140" y1="30" x2="140" y2="90" stroke="blue" stroke-width="5"/>
+            
+            <!-- Painéis da porta -->
+            <rect x="20" y="110" width="70" height="100" fill="#000080" />
+            <rect x="110" y="110" width="70" height="100" fill="#000080" />
+            <rect x="20" y="230" width="70" height="150" fill="#000080" />
+            <rect x="110" y="230" width="70" height="150" fill="#000080" />
+
+            <!-- Linhas dos painéis da porta -->
+            <line x1="20" y1="160" x2="90" y2="160" stroke="blue" stroke-width="5"/>
+            <line x1="20" y1="280" x2="90" y2="280" stroke="blue" stroke-width="5"/>
+            <line x1="110" y1="160" x2="180" y2="160" stroke="blue" stroke-width="5"/>
+            <line x1="110" y1="280" x2="180" y2="280" stroke="blue" stroke-width="5"/>
+            <line x1="55" y1="110" x2="55" y2="210" stroke="blue" stroke-width="5"/>
+            <line x1="145" y1="110" x2="145" y2="210" stroke="blue" stroke-width="5"/>
+            <line x1="55" y1="230" x2="55" y2="380" stroke="blue" stroke-width="5"/>
+            <line x1="145" y1="230" x2="145" y2="380" stroke="blue" stroke-width="5"/>
+        </svg>
+    </div>
+
+    <script>
+        document.getElementById('tardis').addEventListener('click', function() {
+            window.location.href = 'tardis.html';
+        });
+    </script>
+</body>
+</html>
